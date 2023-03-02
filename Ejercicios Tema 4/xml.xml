@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personas [
+    <!ELEMENT personas (datospersonales+, datoslaborales)>
+    <!ELEMENT datospersonales (nombre, apellidos, direccion, telefono, email*, foto*, pie*)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT foto EMPTY>
+    <!ELEMENT pie (#PCDATA)>
+    <!ELEMENT datoslaborales (empresa, direccion, codigopostal)>
+    <!ELEMENT empresa (#PCDATA)>
+    <!ELEMENT codigopostal (#PCDATA)>
+    <!ATTLIST datospersonales edad CDATA #REQUIRED>
+    <!ATTLIST foto src CDATA "./nodisponible.jpg">
+    
+    <!ENTITY copyright "@Martin">
+    <!ENTITY anyo "2022">
+]>
+
+<personas>
+    <datospersonales edad="22">
+        <nombre>Pedro</nombre>
+        <apellidos>Ramírez</apellidos>
+        <direccion>C/ Ancha</direccion>
+        <telefono>6666666</telefono>
+        <email>yo@yo.com</email>
+        <email>yo@yo.com</email>
+        <foto src="" />
+        <pie>&copyright; &anyo;</pie>
+    </datospersonales>
+    <datospersonales edad="19">
+        <nombre>Pedro</nombre>
+        <apellidos>Ramírez</apellidos>
+        <direccion>C/ Ancha</direccion>
+        <telefono>654584835</telefono>
+    </datospersonales>
+    <datoslaborales>
+        <empresa>Empresa S.A.</empresa>
+        <direccion>C/ Estrecha</direccion>
+        <codigopostal>41008</codigopostal>
+    </datoslaborales>
+</personas>

@@ -1,0 +1,15 @@
+<? xml version='1.0'>
+<!DOCTYPE datospersonales [
+!ELEMENT datospersonales (nombre, apellidos, direccion, email, br) //Si uso ? después de la declaración, significa que puede usarse 0 o 1 vez // * , significa que puede aparecer 0 o muchas veces // + , significa que puede usarse 1 o muchas veces
+!ELEMENT nombre (#PCDATA)
+!ELEMENT apellidos (#PCDATA)
+!ELEMENT direccion (#PCDATA)
+!ELEMENT email (#PCDATA)
+!ELEMENT br EMPTY
+]>
+<datospersonales>
+    <nombre>Pedro</nombre>
+    <apellidos>Piedra</apellidos>
+    <direccion>C/ Feria, 31</direccion>
+    <br/>
+</datospersonales>
